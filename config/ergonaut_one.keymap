@@ -50,7 +50,7 @@
 &tog 1      &kp Q       &kp W           &kp F         &kp P             &kp B    &kp J        &kp L         &kp U            &kp Y            &kp SQT          &kp MINUS
 &kp ESCAPE  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G    &kp M        &mt RSHIFT N  &mt RCTRL E      &mt LEFT_ALT I   &mt RIGHT_GUI O  &kp CAPS
 &kp HOME    &kp Z       &mt RALT X      &kp C         &kp D             &kp V    &kp K        &kp H         &kp COMMA        &mt RALT PERIOD  &kp FSLH         &kp END
-                                        &lt 2 DELETE  &lt 3 SPACE       &kp TAB  &lt 6 ENTER  &lt 4 SPACE   &lt 5 BACKSPACE
+                                        &lt 2 DELETE  &lt 3 SPACE       &kp TAB  &lt 6 ENTER  &lt 5 SPACE   &lt 4 BACKSPACE
             >;
         };
 
