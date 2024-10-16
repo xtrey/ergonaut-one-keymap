@@ -9,7 +9,12 @@
 
 &lt { quick-tap-ms = <200>; };
 
-&mt { quick-tap-ms = <200>; };
+&mt {
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <150>;
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+};
 
 / {
     conditional_layers {
@@ -33,7 +38,7 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp ESCAPE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -42,10 +47,10 @@
 
         default_layer {
             bindings = <
-&tog 1        &kp Q       &kp W           &kp F        &kp P             &kp B     &kp J        &kp L         &kp U            &kp Y            &kp SQT          &kp MINUS
-&kp CAPSLOCK  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G     &kp M        &mt RSHIFT N  &mt RCTRL E      &mt LEFT_ALT I   &mt RIGHT_GUI O  &kp ESCAPE
-&kp HOME      &kp Z       &mt RALT X      &kp C        &kp D             &kp V     &kp K        &kp H         &kp COMMA        &mt RALT PERIOD  &kp FSLH         &kp END
-                                          &lt 2 TAB    &lt 3 SPACE       &tab_esc  &lt 6 ENTER  &lt 4 SPACE   &lt 5 BACKSPACE
+&tog 1      &kp Q       &kp W           &kp F         &kp P             &kp B    &kp J        &kp L         &kp U            &kp Y            &kp SQT          &kp MINUS
+&kp ESCAPE  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G    &kp M        &mt RSHIFT N  &mt RCTRL E      &mt LEFT_ALT I   &mt RIGHT_GUI O  &kp CAPS
+&kp HOME    &kp Z       &mt RALT X      &kp C         &kp D             &kp V    &kp K        &kp H         &kp COMMA        &mt RALT PERIOD  &kp FSLH         &kp END
+                                        &lt 2 DELETE  &lt 3 SPACE       &kp TAB  &lt 6 ENTER  &lt 4 SPACE   &lt 5 BACKSPACE
             >;
         };
 
