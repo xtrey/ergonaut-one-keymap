@@ -42,6 +42,15 @@
         };
     };
 
+    macros {
+        alt_shift: alt_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT>;
+            label = "ALT_SHIFT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,46 +65,46 @@
 
         qwerty {
             bindings = <
-&trans  &kp Q  &kp W  &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON  &kp SQT
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp Q  &kp W  &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&trans     &kp A  &kp S  &kp D   &kp F   &kp G   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp LEFT_SHIFT
+                         &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         arrows {
             bindings = <
-&none  &none      &none     &none      &none       &none   &kp K_AGAIN  &kp K_UNDO     &kp K_CUT       &kp K_COPY    &kp K_PASTE  &none
-&none  &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &none   &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
-&none  &none      &kp RALT  &none      &none       &none   &kp INSERT   &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none
-                            &trans     &trans      &trans  &kp ENTER    &kp BACKSPACE  &kp DEL
+&none  &none      &none     &none      &none       &none  &kp K_AGAIN  &kp K_UNDO     &kp K_CUT       &kp K_COPY    &kp K_PASTE  &none
+&none  &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &none  &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
+&none  &none      &kp RALT  &none      &none       &none  &kp INSERT   &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none
+                            &none      &none       &none  &kp ENTER    &kp BACKSPACE  &kp DEL
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL  &trans
-&trans  &trans    &kp RALT  &trans     &trans     &trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH   &trans
-                            &trans     &trans     &trans  &kp MINUS  &kp N0  &kp DOT
+&none  &none     &none     &none      &none      &none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL  &none
+&none  &none     &kp RALT  &none      &none      &none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH   &none
+                           &none      &none      &none  &kp MINUS  &kp N0  &kp DOT
             >;
         };
 
         function {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8     &kp F9     &trans   &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp F11  &kp F4  &kp F5     &kp F6     &trans   &trans  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &trans
-&trans  &kp F10  &kp F1  &kp F2     &kp F3     &trans   &trans  &trans     &trans     &kp RALT  &trans    &trans
-                         &kp K_APP  &kp SPACE  &kp TAB  &trans  &trans     &trans
+&none  &kp F12  &kp F7  &kp F8     &kp F9     &none       &none  &none      &none      &none     &none     &none
+&none  &kp F11  &kp F4  &kp F5     &kp F6     &none       &none  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
+&none  &kp F10  &kp F1  &kp F2     &kp F3     &alt_shift  &none  &none      &none      &kp RALT  &none     &none
+                        &kp K_APP  &kp SPACE  &kp TAB     &none  &none      &none
             >;
         };
 
         special {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE  &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &trans  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans  &trans     &trans     &kp RALT  &trans    &trans
-                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE   &trans  &trans     &trans
+&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE  &none  &none      &none      &none     &none     &none
+&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
+&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &none  &none      &none      &kp RALT  &none     &none
+                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE   &none  &none      &none
             >;
         };
 
