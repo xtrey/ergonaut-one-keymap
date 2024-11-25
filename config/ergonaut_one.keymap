@@ -35,16 +35,6 @@
         };
     };
 
-    behaviors {
-        tab_esc: tab_esc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAB_ESC";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp ESCAPE>;
-
-            tapping-term-ms = <200>;
-        };
-    };
 
     macros {
         alt_shift: alt_shift {
@@ -66,7 +56,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display_name = "MAIN";
+            display-name = "MAIN";
             bindings = <
 &tog 1      &kp Q       &kp W           &kp F         &kp P             &kp B    &kp J        &kp L         &kp U            &kp Y            &kp SQT          &kp MINUS
 &kp ESCAPE  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G    &kp M        &mt RSHIFT N  &mt RCTRL E      &mt LEFT_ALT I   &mt RIGHT_GUI O  &kp CAPS
@@ -76,7 +66,7 @@
         };
 
         qwerty {
-            display_name = "QWR";
+            display-name = "QWR";
             bindings = <
 &trans     &kp Q  &kp W  &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
 &trans     &kp A  &kp S  &kp D   &kp F   &kp G   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON  &kp SQT
@@ -86,7 +76,7 @@
         };
 
         arrows {
-            display_name = "ARR";
+            display-name = "ARR";
             bindings = <
 &none  &none      &none     &none      &none       &none   &kp K_AGAIN  &kp K_UNDO     &kp K_CUT       &kp K_COPY    &kp K_PASTE  &none
 &none  &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &none   &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
@@ -96,7 +86,7 @@
         };
 
         numbers {
-            display_name = "NUM";
+            display-name = "NUM";
             bindings = <
 &none  &none     &none     &none      &none      &none   &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none   &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL  &none
@@ -106,7 +96,7 @@
         };
 
         function {
-            display_name = "FUNC";
+            display-name = "FUNC";
             bindings = <
 &none  &kp F12  &kp F7  &kp F8     &kp F9     &none               &none   &none      &none      &none     &none     &none
 &none  &kp F11  &kp F4  &kp F5     &kp F6     &kp LA(LEFT_SHIFT)  &none   &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
@@ -116,7 +106,7 @@
         };
 
         special {
-            display_name = "SPECIAL";
+            display-name = "SPECIAL";
             bindings = <
 &none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE  &none   &none      &none      &none     &none     &none
 &none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none   &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
@@ -126,7 +116,7 @@
         };
 
         media {
-            display_name = "MEDIA";
+            display-name = "MEDIA";
             bindings = <
 &none  &none           &none            &none              &none             &none             &none  &none      &none      &none     &none     &none
 &none  &kp C_PREVIOUS  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT        &none             &none  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
@@ -136,7 +126,7 @@
         };
 
         adjust_layer {
-            display_name = "ADJ";
+            display-name = "ADJ";
             bindings = <
 &bootloader  &studio_unlock        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &studio_unlock        &bootloader
 &bt BT_CLR   &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0          &bt BT_CLR

@@ -1,6 +1,6 @@
 layers:
-  default:
-  - {t: qwerty, h: toggle}
+  MAIN:
+  - {t: QWR, h: toggle}
   - Q
   - W
   - F
@@ -36,13 +36,13 @@ layers:
   - {t: ., h: Alt}
   - /
   - End
-  - {t: DELETE, h: arrows}
-  - {t: ␣, h: numbers}
+  - {t: DELETE, h: ARR}
+  - {t: ␣, h: NUM}
   - ↹
-  - {t: ENTER, h: media}
-  - {t: ␣, h: special}
-  - {t: BACKSPACE, h: function}
-  qwerty:
+  - {t: ENTER, h: MEDIA}
+  - {t: ␣, h: SPECIAL}
+  - {t: BACKSPACE, h: FUNC}
+  QWR:
   - {t: ▽, type: trans}
   - Q
   - W
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  arrows:
+  ARR:
   - ''
   - ''
   - ''
@@ -128,7 +128,7 @@ layers:
   - ENTER
   - BACKSPACE
   - ⌦
-  numbers:
+  NUM:
   - ''
   - ''
   - ''
@@ -171,7 +171,7 @@ layers:
   - '-'
   - '0'
   - .
-  function:
+  FUNC:
   - ''
   - F12
   - F7
@@ -214,7 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  special:
+  SPECIAL:
   - ''
   - '{'
   - '&'
@@ -257,7 +257,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  media:
+  MEDIA:
   - ''
   - ''
   - ''
@@ -300,7 +300,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  adjust:
+  ADJ:
   - Boot
   - '&studio_unlock'
   - {t: ▽, type: trans}
