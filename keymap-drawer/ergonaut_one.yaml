@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   MAIN:
-  - {t: QWR, h: toggle}
+  - ESCAPE
   - Q
   - W
   - F
@@ -12,7 +13,7 @@ layers:
   - Y
   - ''''
   - '-'
-  - ESCAPE
+  - ↹
   - {t: A, h: Gui}
   - {t: R, h: LEFT ALT}
   - {t: S, h: Ctrl}
@@ -189,7 +190,7 @@ layers:
   - F4
   - F5
   - F6
-  - Alt+ LEFT SHIFT
+  - {t: QWR, h: toggle}
   - ''
   - Shift
   - Ctrl
