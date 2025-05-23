@@ -130,48 +130,48 @@ layers:
   - BACKSPACE
   - ⌦
   NUM:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '['
+  - {t: ▽, type: trans}
+  - '@'
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
-  - ']'
-  - ''
-  - ''
-  - Gui
-  - Alt
-  - Ctrl
+  - <
+  - '>'
+  - {t: ▽, type: trans}
   - Shift
-  - ''
-  - ;
+  - Ctrl
+  - Alt
+  - Gui
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '4'
   - '5'
   - '6'
-  - '='
-  - ''
-  - ''
-  - ''
-  - Alt
-  - ''
-  - ''
-  - ''
-  - '`'
+  - '!'
+  - ;
+  - {t: ▽, type: trans}
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
-  - \
-  - ''
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - '-'
-  - '0'
+  - '~'
+  - '|'
   - .
+  - {t: '0', type: held}
+  - {t: ▽, type: trans}
+  - ENTER
+  - ␣
+  - BACKSPACE
   FUNC:
   - ''
   - F12
@@ -216,48 +216,48 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   SPECIAL:
-  - ''
-  - '{'
-  - '&'
+  - {t: ▽, type: trans}
+  - '#'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - '*'
-  - (
-  - '}'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ':'
-  - $
+  - /
   - '%'
-  - ^
-  - +
-  - ''
+  - {t: ▽, type: trans}
   - Shift
   - Ctrl
   - Alt
   - Gui
-  - ''
-  - ''
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - '|'
-  - ''
-  - ''
-  - ''
-  - Alt
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - (
   - )
-  - _
+  - ':'
+  - '='
+  - .
   - {t: ▽, type: trans}
-  - {type: held}
+  - '"'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - +
+  - '-'
+  - \
+  - ⌦
+  - ␣
+  - ↹
+  - ENTER
+  - {t: _, type: held}
+  - BACKSPACE
   MEDIA:
   - ''
   - ''
