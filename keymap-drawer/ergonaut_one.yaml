@@ -39,8 +39,8 @@ layers:
   - End
   - {t: DELETE, h: ARR}
   - {t: ␣, h: NUM}
-  - ↹
-  - {t: ENTER, h: MEDIA}
+  - {t: ↹, h: MEDIA}
+  - {t: ENTER, h: PROGRAMMING}
   - {t: ␣, h: SPECIAL}
   - {t: BACKSPACE, h: FUNC}
   QWR:
@@ -130,48 +130,48 @@ layers:
   - BACKSPACE
   - ⌦
   NUM:
-  - {t: ▽, type: trans}
-  - '@'
-  - '`'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '['
   - '7'
   - '8'
   - '9'
-  - <
-  - '>'
-  - {t: ▽, type: trans}
-  - Shift
-  - Ctrl
-  - Alt
+  - ']'
+  - \
+  - ''
   - Gui
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - ;
   - '4'
   - '5'
   - '6'
-  - '!'
-  - ;
-  - {t: ▽, type: trans}
-  - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '='
+  - ''
+  - ''
+  - ''
+  - Alt
+  - ''
+  - ''
+  - ''
+  - '0'
   - '1'
   - '2'
   - '3'
-  - '~'
-  - '|'
-  - .
-  - {t: '0', type: held}
+  - '`'
+  - ''
   - {t: ▽, type: trans}
-  - ENTER
-  - ␣
-  - BACKSPACE
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '-'
+  - {t: ▽, type: trans}
+  - .
   FUNC:
   - ''
   - F12
@@ -216,6 +216,49 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   SPECIAL:
+  - ''
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - ''
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - Alt
+  - ''
+  - ''
+  - (
+  - )
+  - _
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  PROGRAMMING:
   - {t: ▽, type: trans}
   - '#'
   - {t: ▽, type: trans}
@@ -252,11 +295,11 @@ layers:
   - +
   - '-'
   - \
-  - ⌦
-  - ␣
-  - ↹
-  - ENTER
-  - {t: _, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ENTER, type: held}
+  - _
   - BACKSPACE
   MEDIA:
   - ''
@@ -273,8 +316,8 @@ layers:
   - ''
   - ''
   - PREVIOUS
-  - VOLUME UP
   - VOLUME DOWN
+  - VOLUME UP
   - ⏭️
   - ''
   - ''
@@ -297,8 +340,8 @@ layers:
   - ''
   - MUTE
   - PLAY PAUSE
-  - STOP EJECT
-  - {type: held}
+  - {t: STOP EJECT, type: held}
+  - ''
   - ''
   - ''
   ADJ:
@@ -342,5 +385,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
