@@ -9,6 +9,7 @@
 #define FUNC 4
 #define SPECIAL 5
 #define MEDIA 6
+#define PROGRAMMING 7
 #define ADJ 16
 
 &lt { quick-tap-ms = <150>; };
@@ -61,7 +62,7 @@
 &kp ESCAPE  &kp Q       &kp W           &kp F         &kp P             &kp B    &kp J        &kp L         &kp U            &kp Y            &kp SQT          &kp MINUS
 &kp TAB     &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G    &kp M        &mt RSHIFT N  &mt RCTRL E      &mt LEFT_ALT I   &mt RIGHT_GUI O  &kp CAPS
 &kp HOME    &kp Z       &mt RALT X      &kp C         &kp D             &kp V    &kp K        &kp H         &kp COMMA        &mt RALT PERIOD  &kp FSLH         &kp END
-                                        &lt 2 DELETE  &lt 3 SPACE       &kp TAB  &lt 6 ENTER  &lt 5 SPACE   &lt 4 BACKSPACE
+                                        &lt 2 DELETE  &lt 3 SPACE       &lt 7 TAB  &lt 6 ENTER  &lt 5 SPACE   &lt 4 BACKSPACE
             >;
         };
 
@@ -87,17 +88,11 @@
 
         numbers {
             display-name = "NUM";
-            /* NUMBERS Layer (Layer 3) - Activated by Left Thumb (&lt 3 SPACE)
-             * - Standard numpad layout on the right hand (0 on thumb).
-             * - Comparison operators: <, >, !
-             * - Other programming symbols.
-             * - Modifiers on the left hand for chording.
-             */
             bindings = <
-&trans  &kp AT_SIGN  &kp GRAVE  &trans    &trans    &trans     &trans  &kp N7   &kp N8   &kp N9   &kp LESS_THAN  &kp GREATER_THAN
-&trans  &kp LSHFT    &kp LCTRL  &kp LALT  &kp LGUI  &trans     &trans  &kp N4   &kp N5   &kp N6   &kp EXCLAMATION  &kp SEMI
-&trans  &kp MINUS    &trans     &trans    &trans    &trans     &trans  &kp N1   &kp N2   &kp N3   &kp TILDE  &kp PIPE
-                               &kp DOT   &kp N0    &trans     &kp ENTER  &kp SPACE  &kp BACKSPACE
+&none  &none     &none     &none      &none      &none   &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none   &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL  &none
+&none  &none     &kp RALT  &none      &none      &none   &kp GRAVE  N0 N1  &kp N2   &kp N3  &kp BSLH   &none
+                           &trans     &trans     &trans  &kp MINUS  &kp N0  &kp DOT
             >;
         };
 
@@ -113,7 +108,17 @@
 
         special {
             display-name = "SPECIAL";
-            /* SPECIAL Layer (Layer 5) - Activated by Right Thumb (&lt 5 SPACE)
+            bindings = <
+&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE  &none   &none      &none      &none     &none     &none
+&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS         &none   &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
+&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &none   &none      &none      &kp RALT  &none     &none
+                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE   &trans  &trans     &trans
+            >;
+        };
+
+        programming {
+            display-name = "PROGRAMMING";
+            /* PROGRAMMING Layer (Layer 5) - Activated by Right Thumb (&lt 5 SPACE)
              * Optimized for Python programming:
              * - Contains all brackets: (), [], {}
              * - Core Python symbols: :, =, ., _ (on thumb)
@@ -124,7 +129,7 @@
 &trans  &kp HASH  &trans    &trans    &trans    &trans         &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK  &kp SLASH  &kp PERCENT
 &trans  &kp LSHFT &kp LCTRL &kp LALT  &kp LGUI  &trans         &trans  &kp LPAR          &kp RPAR          &kp COLON     &kp EQUAL  &kp DOT
 &trans  &kp DQT   &trans    &trans    &trans    &trans         &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PLUS      &kp MINUS  &kp BSLH
-                              &kp DEL   &kp SPACE  &kp TAB        &kp ENTER  &kp UNDERSCORE  &kp BACKSPACE
+                              &trans     &trans     &trans        &kp ENTER  &kp UNDERSCORE  &kp BACKSPACE
             >;
         };
 
@@ -132,7 +137,7 @@
             display-name = "MEDIA";
             bindings = <
 &none  &none           &none            &none              &none             &none             &none  &none      &none      &none     &none     &none
-&none  &kp C_PREVIOUS  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT        &none             &none  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
+&none  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT        &none             &none  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
 &none  &none           &none            &none              &none             &none             &none  &none      &none      &kp RALT  &none     &none
                                         &kp C_MUTE         &kp C_PLAY_PAUSE  &kp C_STOP_EJECT  &none  &none      &none
             >;
