@@ -27,12 +27,12 @@
 
         tri-layer-right {
             if-layers = <2 3>;
-            then-layer = <7>;
+            then-layer = <8>;
         };
 
         tri-layer-left {
             if-layers = <4 5>;
-            then-layer = <7>;
+            then-layer = <8>;
         };
     };
 
