@@ -12,7 +12,10 @@
 #define PROGRAMMING 7
 #define ADJ 16
 
-&lt { quick-tap-ms = <150>; };
+&lt {
+    quick-tap-ms = <150>;
+    flavor = "tap-unless-interrupted";
+};
 
 &mt {
     quick-tap-ms = <160>;
