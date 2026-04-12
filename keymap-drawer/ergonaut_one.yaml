@@ -39,8 +39,8 @@ layers:
   - End
   - {t: DELETE, h: ARR}
   - {t: ␣, h: NUM}
-  - {t: ↹, h: MEDIA}
-  - {t: ENTER, h: PROGRAMMING}
+  - {t: ↹, h: PROGRAMMING}
+  - {t: ENTER, h: MEDIA}
   - {t: ␣, h: SPECIAL}
   - {t: BACKSPACE, h: FUNC}
   QWR:
@@ -269,8 +269,8 @@ layers:
   - '['
   - ']'
   - '*'
-  - /
   - '%'
+  - /
   - {t: ▽, type: trans}
   - Shift
   - Ctrl
@@ -282,7 +282,7 @@ layers:
   - )
   - ':'
   - '='
-  - .
+  - '|'
   - {t: ▽, type: trans}
   - '"'
   - {t: ▽, type: trans}
@@ -297,8 +297,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ENTER, type: held}
+  - {type: held}
+  - ENTER
   - _
   - BACKSPACE
   MEDIA:
@@ -340,8 +340,8 @@ layers:
   - ''
   - MUTE
   - PLAY PAUSE
-  - {t: STOP EJECT, type: held}
-  - ''
+  - STOP EJECT
+  - {type: held}
   - ''
   - ''
   ADJ:
