@@ -14,7 +14,7 @@
 
 &lt {
     quick-tap-ms = <150>;
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
 };
 
 &mt {
