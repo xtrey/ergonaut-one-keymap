@@ -87,7 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ARR:
-  - ''
+  - Boot
   - ''
   - ''
   - ''
@@ -184,7 +184,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Boot
   - ''
   - F11
   - F4

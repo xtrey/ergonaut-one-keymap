@@ -81,10 +81,10 @@
         arrows {
             display-name = "ARR";
             bindings = <
-&none  &none      &none     &none      &none       &none   &kp K_AGAIN  &kp K_UNDO     &kp K_CUT       &kp K_COPY    &kp K_PASTE  &none
-&none  &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &none   &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
-&none  &none      &kp RALT  &none      &none       &none   &kp INSERT   &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none
-                            &trans     &trans      &trans  &kp ENTER    &kp BACKSPACE  &kp DEL
+&bootloader  &none      &none     &none      &none       &none   &kp K_AGAIN  &kp K_UNDO     &kp K_CUT       &kp K_COPY    &kp K_PASTE  &none
+&none        &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &none   &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
+&none        &none      &kp RALT  &none      &none       &none   &kp INSERT   &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none
+                                  &trans     &trans      &trans  &kp ENTER    &kp BACKSPACE  &kp DEL
             >;
         };
 
@@ -101,7 +101,7 @@
         function {
             display-name = "FUNC";
             bindings = <
-&none  &kp F12  &kp F7  &kp F8     &kp F9     &none       &none   &none      &none      &none     &none     &none
+&none  &kp F12  &kp F7  &kp F8     &kp F9     &none       &none   &none      &none      &none     &none     &bootloader
 &none  &kp F11  &kp F4  &kp F5     &kp F6     &tog 1      &none   &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &none
 &none  &kp F10  &kp F1  &kp F2     &kp F3     &alt_shift  &none   &none      &none      &kp RALT  &none     &none
                         &kp K_APP  &kp SPACE  &kp TAB     &trans  &trans     &trans
