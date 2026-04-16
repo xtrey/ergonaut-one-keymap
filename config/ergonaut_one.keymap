@@ -10,11 +10,12 @@
 #define SPECIAL 5
 #define MEDIA 6
 #define PROGRAMMING 7
-#define ADJ 16
+#define ADJ 8
 
 &lt {
-    quick-tap-ms = <150>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
+    tapping-term-ms = <180>;
+    quick-tap-ms = <120>;
 };
 
 &mt {
@@ -30,12 +31,12 @@
 
         tri-layer-right {
             if-layers = <2 3>;
-            then-layer = <8>;
+            then-layer = <ADJ>;
         };
 
         tri-layer-left {
             if-layers = <4 5>;
-            then-layer = <8>;
+            then-layer = <ADJ>;
         };
     };
 
