@@ -87,19 +87,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ARR:
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - AGAIN
   - UNDO
   - CUT
   - COPY
   - PASTE
   - ''
-  - ''
+  - Reset
   - LMETA
   - Alt
   - Ctrl
@@ -111,8 +111,8 @@ layers:
   - UP ARROW
   - →
   - ''
-  - ''
-  - ''
+  - Boot
+  - '&studio_unlock'
   - Alt
   - ''
   - ''
@@ -124,7 +124,7 @@ layers:
   - End
   - ''
   - {type: held}
-  - {t: ADJ, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
@@ -179,12 +179,12 @@ layers:
   - F8
   - F9
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT CLR
   - ''
   - F11
   - F4
@@ -196,7 +196,7 @@ layers:
   - Ctrl
   - Alt
   - Gui
-  - ''
+  - Reset
   - ''
   - F10
   - F1
@@ -208,12 +208,12 @@ layers:
   - ''
   - Alt
   - ''
-  - ''
+  - Boot
   - APP
   - ␣
   - ↹
   - {t: ▽, type: trans}
-  - {t: ADJ, h: toggle}
+  - {t: ▽, type: trans}
   - {type: held}
   SPECIAL:
   - ''
@@ -344,46 +344,3 @@ layers:
   - {type: held}
   - ''
   - ''
-  ADJ:
-  - Boot
-  - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&studio_unlock'
-  - Boot
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - BT 5
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT CLR
-  - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
