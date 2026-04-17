@@ -124,7 +124,7 @@ layers:
   - End
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
+  - ADJ
   - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
@@ -213,7 +213,7 @@ layers:
   - ␣
   - ↹
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ADJ
   - {type: held}
   SPECIAL:
   - ''
@@ -381,9 +381,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
