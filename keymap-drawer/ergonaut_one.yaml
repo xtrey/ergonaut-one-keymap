@@ -104,7 +104,7 @@ layers:
   - Alt
   - Ctrl
   - LSHIFT
-  - ''
+  - Out USB
   - ''
   - ←
   - DOWN ARROW
@@ -116,7 +116,7 @@ layers:
   - Alt
   - ''
   - ''
-  - ''
+  - Out BLE
   - INSERT
   - Home
   - PAGE DOWN
