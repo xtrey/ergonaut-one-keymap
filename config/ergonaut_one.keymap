@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
 #define QWR 1
@@ -66,8 +67,8 @@
             display-name = "ARR";
             bindings = <
             &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &kp K_AGAIN  &kp K_UNDO     &kp K_CUT       &kp K_COPY    &kp K_PASTE  &none
-            &sys_reset       &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &none   &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
-            &bootloader        &studio_unlock      &kp RALT  &none      &none       &none   &kp INSERT   &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none
+            &sys_reset       &kp LMETA  &kp LALT  &kp LCTRL  &kp LSHIFT  &out OUT_USB   &none        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &none
+            &bootloader        &studio_unlock      &kp RALT  &none      &none       &out OUT_BLE   &kp INSERT   &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none
             &trans     &trans       &trans  &kp ENTER    &kp BACKSPACE  &kp DEL
             >;
         };
@@ -86,8 +87,8 @@
             display-name = "FUNC";
             bindings = <
             &none  &kp F12  &kp F7  &kp F8     &kp F9     &none       &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
-            &none  &kp F11  &kp F4  &kp F5     &kp F6     &tog 1      &none   &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &sys_reset
-            &none  &kp F10  &kp F1  &kp F2     &kp F3     &alt_shift  &none   &none      &none      &kp RALT  &none     &bootloader
+            &none  &kp F11  &kp F4  &kp F5     &kp F6     &tog 1      &out OUT_USB  &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI  &sys_reset
+            &none  &kp F10  &kp F1  &kp F2     &kp F3     &alt_shift  &out OUT_BLE  &none      &none      &kp RALT  &none     &bootloader
             &kp K_APP  &kp SPACE  &kp TAB     &trans  &trans      &trans
             >;
         };

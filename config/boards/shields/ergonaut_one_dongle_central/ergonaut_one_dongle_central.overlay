@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2024 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ *
+ * The dongle has no physical keys — disable the key matrix provided by
+ * the stacked ergonaut_one_left shield so those GPIOs are free for the display.
+ */
+
+/ {
+    chosen {
+        /delete-property/ zmk,kscan;
+    };
+};
+
+&kscan0 {
+    status = "disabled";
+};
