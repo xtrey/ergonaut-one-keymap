@@ -1,8 +1,10 @@
 include:
+  # Standard half builds
   - board: xiao_ble//zmk
     shield: ergonaut_one_left
   - board: xiao_ble//zmk
     shield: ergonaut_one_right
+  # ZMK Studio debug build (left half only, USB)
   - board: xiao_ble//zmk
     shield: ergonaut_one_left
     snippet: studio-rpc-usb-uart
@@ -15,3 +17,22 @@ include:
     artifact-name: ergonaut_one_right_studio
   - board: xiao_ble//zmk
     shield: settings_reset
+
+  # Dongle builds — flash these when switching to dongle topology:
+  #   dongle → USB to PC,  left_peripheral + right → BLE to dongle
+
+  # Left half in peripheral mode (pairs to dongle instead of acting as central)
+  - board: xiao_ble//zmk
+    shield: ergonaut_one_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: ergonaut_one_left_peripheral
+
+  # Dongle without display
+  - board: xiao_ble//zmk
+    shield: ergonaut_one_left ergonaut_one_dongle_central
+    artifact-name: ergonaut_one_dongle
+
+  # Dongle with ST7789V display (zmk-dongle-screen)
+  - board: xiao_ble//zmk
+    shield: ergonaut_one_left ergonaut_one_dongle_central dongle_screen
+    artifact-name: ergonaut_one_dongle_screen
