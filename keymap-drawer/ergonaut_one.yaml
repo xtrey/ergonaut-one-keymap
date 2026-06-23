@@ -191,7 +191,7 @@ layers:
   - F5
   - F6
   - {t: QWR, h: toggle}
-  - ''
+  - Out USB
   - Shift
   - Ctrl
   - Alt
@@ -203,7 +203,7 @@ layers:
   - F2
   - F3
   - '&alt_shift'
-  - ''
+  - Out BLE
   - ''
   - ''
   - Alt
